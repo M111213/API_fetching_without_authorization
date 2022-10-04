@@ -14,18 +14,6 @@ async function get() {
 
 }
 
-/*async function post(data: any){
-const body = data;
-const resposes = await fetch('https://jsonplaceholder.typicode.com/todos?page=1',{
-  body: JSON.stringify({
-    "userId": 1,
-    "title": "Create New Post",
-    "completed": true}),
-  method: 'POST'
-})
-return resposes.status;
-}*/
-
 function Contact() {
   const [todos, setTodos] = useState<any[]>([]);
   const [name, setName] = useState<string[]>([]);
@@ -67,13 +55,13 @@ function Contact() {
   }
 
 
-  /*const person = prompt(" Enter your name");
+  const person = prompt(" Enter your name");
   if (person == null || person == "") {
     let text = "User cancelled the prompt.";
   } else {
     let text = "Hello " + person + "Welcome to contact manager";
   } 
-  */
+
   return (
     <form onSubmit={display}>
       <div className="App">
