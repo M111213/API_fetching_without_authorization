@@ -54,7 +54,6 @@ function Contact() {
     setRawInput("");
   }
 
-
   const person = prompt(" Enter your name");
   if (person == null || person == "") {
     let text = "User cancelled the prompt.";
@@ -99,10 +98,7 @@ function Contact() {
   )
 }
 
-
 function UnmountOnEmptyRawInput({ rawInput }: { rawInput: string }) {
-
-
 
   useEffect(()=>{
       console.log("Mounting");
